@@ -3,22 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend | REST Countries App</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>REST Countries App</h1>
-    </header>
+  <header>
+    <h1>Country Information</h1>
     <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search for a country ...........">
-      <button id="searchButton">Search</button>
-    </div>
-    <div class="countries-list" id="countriesList"></div>
+        <input type="text" id="searchInput" placeholder="Search for a country">
+        <button id="searchButton">Search</button>
+        <h4>click to flag and Go down to get infomation</h4>
+      </div>
+  </header>
+  <div class="container">
+    <div id="countriesList" class="countries-list"></div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modalCountryName"></h2>
+          <p id="modalContinent"></p>
+          <p id="modalPopulation"></p>
+          <p id="modalArea"></p>
+          <p id="modalLanguages"></p>
+        </div>
+      </div>
   </div>
-
-  <script src="./script.js"></script>
+  <div id="message" class="message">Click on a flag to get more information</div>
+  <script src="script.js"></script>
 </body>
 </html>
 
