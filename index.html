@@ -1,35 +1,46 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Frontend | REST Countries App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>Country Information</h1>
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search for a country">
-        <button id="searchButton">Search</button>
-        <h4>click to flag and Go down to get infomation</h4>
-      </div>
-  </header>
-  <div class="container">
-    <div id="countriesList" class="countries-list"></div>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2 id="modalCountryName"></h2>
-          <p id="modalContinent"></p>
-          <p id="modalPopulation"></p>
-          <p id="modalArea"></p>
-          <p id="modalLanguages"></p>
+    <div class="container">
+        <header class="header">
+            <h2>Country information</h2>
+        </header>
+        <div class="second-container">
+            <div class="search-country">
+                <label   id="search-trigger"> Search</label> 
+                <input type="text" id="search-input" placeholder="Search country here">
+            </div>
+            <div class="filter-regions">
+                <span class="filter">
+                    <p>Filter region</p>
+                    <i class="fa fa-caret-down"></i> 
+                </span>
+                <div class="regions">
+                    <p>Africa</p>
+                    <p>America</p>
+                    <p>Asia</p>
+                    <p>Europe</p>
+                    <p>Oceania</p>
+                </div>
+            </div>
         </div>
-      </div>
-  </div>
-  <div id="message" class="message">Click on a flag to get more information</div>
-  <script src="script.js"></script>
+        <div class="countries-container">
+            
+        </div>
+    </div>
+
+    <script src="./js.js"></script>
 </body>
 </html>
+
 
